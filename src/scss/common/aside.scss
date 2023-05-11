@@ -1,0 +1,74 @@
+@import "../index.scss";
+
+.aside {
+  width: 310px;
+  height: 1198px;
+  padding: 36px 28px;
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    &-title {
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 39px;
+      letter-spacing: 0.01em;
+    }
+    &-version {
+      font-size: 10px;
+      line-height: 15px;
+      letter-spacing: -0.01em;
+      color: $text-color-gray;
+      margin-left: 5px;
+    }
+  }
+  &__menu {
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 13px 19px 13px 13px;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 17px;
+      &:hover {
+        background: $hover-color;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.25s;
+        .aside__menu-text {
+          color: $text-color-white;
+        }
+        svg path {
+          stroke: $text-color-white;
+        }
+      }
+    }
+    &-content {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    &-text {
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: -0.01em;
+    }
+  }
+  &__user {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    &-name {
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.01em;
+      color: $text-color-main;
+    }
+    &-role {
+      font-size: 12px;
+      line-height: 18px;
+      color: $text-color-dark-gray;
+    }
+  }
+}
