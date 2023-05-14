@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/CRM-layout/static/css/main.e75dec2f.css",
+    "main.js": "/CRM-layout/static/js/main.526997ba.js",
+    "static/media/discount.svg": "/CRM-layout/static/media/discount.5230029f4e637c534c143c4d95cf421f.svg",
+    "static/media/money.svg": "/CRM-layout/static/media/money.25d824b57e5c5a753432296807e7285d.svg",
+    "static/media/cube.svg": "/CRM-layout/static/media/cube.1ca4fd5b650bd0a4104c1a2789ca1171.svg",
+    "static/media/help.svg": "/CRM-layout/static/media/help.5d23912a887f9edc9d9f8d957ec960e6.svg",
+    "static/media/profile.svg": "/CRM-layout/static/media/profile.8262755cd49eb6fddb7f6d00ddf93ef8.svg",
+    "static/media/general.svg": "/CRM-layout/static/media/general.fe984a6cdb2ef8c5a0b69a7ef20deea3.svg",
+    "static/media/key.svg": "/CRM-layout/static/media/key.153a0eb179be0548729792a4f21fc52e.svg",
+    "index.html": "/CRM-layout/index.html",
+    "static/media/search.svg": "/CRM-layout/static/media/search.d555a35800fec6f7c1928aef95546ef7.svg",
+    "static/media/chevron.svg": "/CRM-layout/static/media/chevron.2a651dda6c6118dbe335ce4c2212cc6c.svg",
+    "main.e75dec2f.css.map": "/CRM-layout/static/css/main.e75dec2f.css.map",
+    "main.526997ba.js.map": "/CRM-layout/static/js/main.526997ba.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e75dec2f.css",
+    "static/js/main.526997ba.js"
+  ]
+}
