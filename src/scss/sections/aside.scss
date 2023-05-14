@@ -1,19 +1,21 @@
 @import "../index.scss";
 
 .aside {
-  width: 310px;
-  height: 1198px;
+  min-width: 310px;
   padding: 36px 28px;
+  @include md {
+    min-width: 220px;
+  }
   &__logo {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 50px;
     &-title {
-      font-weight: 600;
       font-size: 26px;
       line-height: 39px;
       letter-spacing: 0.01em;
+      font-weight: 600;
     }
     &-version {
       font-size: 10px;
@@ -24,6 +26,46 @@
     }
   }
   &__menu {
+    &-mobile {
+      display: none;
+      @include sm {
+        display: flex;
+
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        padding: 160px 20px;
+        bottom: 0;
+        left: -100%;
+        top: 0;
+        font-size: 16px;
+        width: min(55vw, 200px);
+        height: 100vh;
+        gap: 50px;
+        z-index: 10;
+        background-color: $hover-color;
+        transition: left 1s;
+        margin: 0;
+        box-shadow: -10px 0px 30px -15px black;
+        color: $text-color-white;
+        &-active {
+          left: 0;
+        }
+        &-item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+        li {
+          cursor: pointer;
+          position: relative;
+
+          &:hover {
+            color: $text-color-dark-gray;
+          }
+        }
+      }
+    }
     &-item {
       display: flex;
       justify-content: space-between;
@@ -52,23 +94,34 @@
     &-text {
       font-size: 14px;
       line-height: 21px;
-      letter-spacing: -0.01em;
+      letter-spacing: 1px;
+      color: $text-color-light-gray;
+      @include md {
+        font-size: 12px;
+      }
     }
   }
   &__user {
     display: flex;
     gap: 13px;
     align-items: center;
+    margin-top: 600px;
     &-name {
       font-size: 14px;
       line-height: 21px;
       letter-spacing: 0.01em;
       color: $text-color-main;
+      @include sm {
+        color: $text-color-white;
+      }
     }
     &-role {
       font-size: 12px;
       line-height: 18px;
       color: $text-color-dark-gray;
+      @include sm {
+        color: $text-color-white;
+      }
     }
   }
 }

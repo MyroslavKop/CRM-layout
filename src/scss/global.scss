@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 @import "./skins.scss";
+@import "./mixins-media.scss";
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  font-style: normal;
+  font-weight: 500;
 }
 
 body {
@@ -20,4 +24,47 @@ h3 {
 ul {
   list-style: none;
   padding: 0;
+}
+
+.container {
+  display: flex;
+  min-height: 1200px;
+  @include sm {
+    min-height: 800px;
+  }
+}
+.active {
+  color: $status-active-text;
+  background-color: $status-active-background;
+  border: 1px solid $status-active-text;
+}
+.inactive {
+  color: $status-inactive-text;
+  background-color: $status-inactive-background;
+  border: 1px solid $status-inactive-text;
+}
+
+.body__active {
+  overflow: hidden;
+}
+.desktop {
+  @include sm {
+    display: none;
+  }
+}
+
+.mobile {
+  position: relative;
+  bottom: 30px;
+}
+
+.hamburger {
+  display: none;
+  @include sm {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 55px;
+    z-index: 20;
+  }
 }
